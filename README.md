@@ -6,13 +6,13 @@ A fully responsive, single-page website for **Narayan Digital Studio** — a pro
 
 ---
 
-## 🌟 About
+##  About
 
 Narayan Digital Studio specializes in turning life's precious moments into lasting memories. With 29+ years of experience, 4800+ sessions completed, and a 98% client satisfaction rate, NDS is a trusted name in professional photography across the region.
 
 ---
 
-## 📄 Pages & Features
+##  Pages & Features
 
 | Page | Description |
 |------|-------------|
@@ -22,7 +22,7 @@ Narayan Digital Studio specializes in turning life's precious moments into lasti
 | **Payment** | Package selection with GST calculation and secure checkout UI |
 | **Dashboard** | Client portal with bookings, album downloads, and payment history |
 
-### ✨ Highlights
+###  Highlights
 
 - **Animated loader** with NDS branding
 - **Sticky navigation** with scroll effects and mobile hamburger menu
@@ -38,7 +38,7 @@ Narayan Digital Studio specializes in turning life's precious moments into lasti
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Technology | Usage |
 |------------|-------|
@@ -52,7 +52,7 @@ Narayan Digital Studio specializes in turning life's precious moments into lasti
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 nds website/
@@ -73,7 +73,7 @@ nds website/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 No installation required.
 
