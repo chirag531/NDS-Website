@@ -1,5 +1,5 @@
 # NDS — Narayan Digital Studio
-
+![image alt](https://github.com/chirag531/NDS-Website/blob/main/Home%20pg)
 > **Capturing Memories, Creating Stories**
 
 A fully responsive, single-page website for **Narayan Digital Studio** — a professional photography studio established in 1965, based in Channapatna, South Bengaluru, Karnataka.
