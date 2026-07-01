@@ -1,4 +1,4 @@
-# 📸 NDS — Narayan Digital Studio
+# NDS — Narayan Digital Studio
 
 > **Capturing Memories, Creating Stories**
 
@@ -85,38 +85,3 @@ git clone https://github.com/chirag531/NDS-Website.git
 cd NDS-Website
 # Open nds.html in your browser
 ```
-
----
-
-## 📷 Photography Services
-
-| Service | Starting Price |
-|---------|---------------|
-| Wedding Photography | ₹25,000 |
-| Pre-Wedding Shoots | ₹12,000 |
-| Birthday Events | ₹8,000 |
-| Baby Shoots | ₹6,000 |
-| Family Portraits | ₹5,000 |
-| Traditional Ceremonies | ₹10,000 |
-
----
-
-## 📬 Contact
-
-| | |
-|--|--|
-| 📍 Address | MG Road, opp. Shivananda Theater, Channapatna, Karnataka – 562160 |
-| 📞 Phone | +91 9845218896 · +91 9008518896 |
-| ✉️ Email | nanarayanstudio@gmail.com |
-| 🕐 Hours | Mon–Sat: 9:00 AM – 10:00 PM · Sun: By appointment |
-
-### Social Media
-- [Instagram](https://www.instagram.com/nds__photography_?igsh=dG9uNWJ2MHp5YnRl)
-- [YouTube](https://youtube.com/@ndscandidphotography7960?feature=shared)
-
----
-
-## 📜 License
-
-© 2026 Narayan Digital Studio. All Rights Reserved.  
-Designed @ 531 in South Bangalore.
