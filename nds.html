@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NDS – Narayan Digital Studio | Capturing Memories, Creating Stories</title>
+<meta name="description" content="Narayan Digital Studio – Professional photography for weddings, pre-weddings, birthdays, baby shoots, and family portraits.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="nds.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════
+     LOADER
+═══════════════════════════════════════════════ -->
+<div class="loader" id="loader">
+  <div class="loader-logo">NDS</div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  <p>Narayan Digital Studio</p>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     NAVIGATION
+═══════════════════════════════════════════════ -->
+<nav id="navbar">
+  <div class="nav-logo" onclick="showPage('page-home')">
+    <div class="logo-emblem">NDS</div>
+    <div class="logo-text">
+      <span class="brand">Narayan Digital Studio</span>
+      <span class="tagline">Capturing Memories, Creating Stories</span>
+    </div>
+  </div>
+  <div class="nav-links">
+    <a href="#" id="nav-home" class="active" onclick="showPage('page-home')">Home</a>
+    <a href="#" onclick="scrollToSection('gallery-section')">Gallery</a>
+    <a href="#" id="nav-gallery" onclick="showPage('page-gallery')">Collections</a>
+    <a href="#" onclick="scrollToSection('services-section')">Services</a>
+    <a href="#" id="nav-payment" onclick="showPage('page-payment')">Payment</a>
+    <a href="#" id="nav-login" onclick="showPage('page-login')"><button class="nav-btn-login" id="nav-login-btn">Login</button></a>
+    <a href="#" onclick="scrollToSection('contact-section')">Contact Us</a>
+  </div>
+  <div class="hamburger" onclick="toggleMobile()"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#" onclick="showPage('page-home');toggleMobile()">Home</a>
+  <a href="#" onclick="scrollToSection('gallery-section');toggleMobile()">Gallery</a>
+  <a href="#" onclick="showPage('page-gallery');toggleMobile()">Collections</a>
+  <a href="#" onclick="scrollToSection('services-section');toggleMobile()">Services</a>
+  <a href="#" onclick="showPage('page-payment');toggleMobile()">Payment</a>
+  <a href="#" onclick="showPage('page-login');toggleMobile()">Login</a>
+  <a href="#" onclick="scrollToSection('contact-section');toggleMobile()">Contact Us</a>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     PAGE 1 — HOME
+═══════════════════════════════════════════════ -->
+<div id="page-home" class="page active">
+
+  <!-- HERO -->
+  <section class="hero" style="padding:0">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-tag"><i class="fas fa-camera"></i> Professional Photography Studio</div>
+      <h1 class="hero-headline">Capturing Your<br><em>Precious Memories</em><br>Forever.</h1>
+      <p class="hero-sub">From wedding ceremonies to baby milestones — we preserve your most treasured moments with artistry and elegance.</p>
+      <div class="hero-cta">
+        <a href="#" onclick="showPage('page-gallery')" class="btn-gold"><i class="fas fa-images"></i> View Portfolio</a>
+        <a href="#" onclick="scrollToSection('contact-section')" class="btn-outline"><i class="fas fa-calendar-alt"></i> Book Session</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="num">29+</span><span class="label">Years Experience</span></div>
+        <div class="stat"><span class="num">4800+</span><span class="label">Sessions Completed</span></div>
+        <div class="stat"><span class="num">98%</span><span class="label">Client Satisfaction</span></div>
+        <div class="stat"><span class="num">60+</span><span class="label">Awards Won</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll" onclick="scrollToSection('about-section')">
+      <div class="scroll-line"></div><span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-section" id="about-section">
+    <div class="about-grid fade-in">
+      <div class="about-images">
+        <img src="nds.jpg" alt="Photography studio" class="about-img-main">
+        <img src="she.jpg" alt="Wedding shoot" class="about-img-secondary">
+        <div class="about-badge"><div class="years">29</div><div class="text">Years of<br>Excellence</div></div>
+      </div>
+      <div class="about-text">
+        <span class="section-tag">Our Story</span>
+        <h2 class="section-title">Narayan Meets <em>Passion</em></h2>
+        <div class="gold-line"><i class="fas fa-diamond"></i></div>
+        <p class="section-desc" style="margin-bottom:20px">Founded in 1965, Narayan Digital Studio has been at the forefront of professional photography in the region. We believe every moment tells a story — and we're dedicated to telling yours with beauty, authenticity, and timeless artistry.</p>
+        <p class="section-desc" style="margin-bottom:30px">Our team of passionate photographers blends technical mastery with creative vision to deliver photographs that transcend time. From intimate baby shoots to grand wedding celebrations, every session is crafted with meticulous care.</p>
+        <div class="about-features">
+          <div class="feature-item"><div class="feature-icon"><i class="fas fa-camera-retro"></i></div><div class="feature-text"><div class="ft">Professional Grade Equipment</div><div class="fd">Sony & Canon flagship cameras with premium lens collections</div></div></div>
+          <div class="feature-item"><div class="feature-icon"><i class="fas fa-palette"></i></div><div class="feature-text"><div class="ft">Expert Post-Processing</div><div class="fd">Cinematic color grading and retouching in every package</div></div></div>
+          <div class="feature-item"><div class="feature-icon"><i class="fas fa-clock"></i></div><div class="feature-text"><div class="ft">Quick Turnaround</div><div class="fd">Delivered online gallery within 7–10 working days</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED GALLERY -->
+  <section id="gallery-section">
+    <div class="section-header fade-in">
+      <span class="section-tag">Our Work</span>
+      <h2 class="section-title">Featured <em>Captures</em></h2>
+      <div class="gold-line"><i class="fas fa-diamond"></i></div>
+      <p class="section-desc">A glimpse into our world — where light, emotion, and artistry converge into something unforgettable.</p>
+    </div>
+    <div class="gallery-grid fade-in">
+      <div class="gallery-item"><img src="g01.png" alt="Wedding" class="gallery-img"><div class="gallery-overlay"><div><div class="gallery-cat">Wedding</div><div class="gallery-label">A Love Story Unfolds</div></div></div></div>
+      <div class="gallery-item"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&q=85" alt="Birthday" class="gallery-img"><div class="gallery-overlay"><div><div class="gallery-cat">Birthday</div><div class="gallery-label">Celebrate Every Moment</div></div></div></div>
+      <div class="gallery-item"><img src="g03.jpg" alt="Baby" class="gallery-img"><div class="gallery-overlay"><div><div class="gallery-cat">Baby Shoot</div><div class="gallery-label">Tiny Wonders</div></div></div></div>
+      <div class="gallery-item"><img src="g04.jpg" alt="Pre-wedding" class="gallery-img"><div class="gallery-overlay"><div><div class="gallery-cat">Pre-Wedding</div><div class="gallery-label">Before Forever</div></div></div></div>
+      <div class="gallery-item"><img src="g05.jpg" alt="Portrait" class="gallery-img"><div class="gallery-overlay"><div><div class="gallery-cat">Portrait</div><div class="gallery-label">Family Legacy</div></div></div></div>
+    </div>
+    <div style="text-align:center;margin-top:44px">
+      <a href="#" onclick="showPage('page-gallery')" class="btn-gold"><i class="fas fa-th"></i> View Full Gallery</a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services-section" id="services-section">
+    <div class="section-header fade-in">
+      <span class="section-tag">What We Offer</span>
+      <h2 class="section-title">Our <em>Services</em></h2>
+      <div class="gold-line"><i class="fas fa-diamond"></i></div>
+      <p class="section-desc">Comprehensive photography services crafted for every life milestone and celebration.</p>
+    </div>
+    <div class="services-grid fade-in">
+      <div class="service-card"><div class="service-icon"><i class="fas fa-heart"></i></div><div class="service-name">Wedding Photography</div><p class="service-desc">Full-day coverage capturing every vow, tear, and celebration of your perfect wedding day.</p><div class="service-price">Starting from ₹25,000</div></div>
+      <div class="service-card"><div class="service-icon"><i class="fas fa-ring"></i></div><div class="service-name">Pre-Wedding Shoots</div><p class="service-desc">Romantic couple sessions at handpicked outdoor and studio locations.</p><div class="service-price">Starting from ₹12,000</div></div>
+      <div class="service-card"><div class="service-icon"><i class="fas fa-birthday-cake"></i></div><div class="service-name">Birthday Events</div><p class="service-desc">Vibrant birthday coverage preserving the joy, decorations, and candid moments.</p><div class="service-price">Starting from ₹8,000</div></div>
+      <div class="service-card"><div class="service-icon"><i class="fas fa-baby"></i></div><div class="service-name">Baby Shoots</div><p class="service-desc">Adorable newborn and toddler photography in a safe, comfortable environment.</p><div class="service-price">Starting from ₹6,000</div></div>
+      <div class="service-card"><div class="service-icon"><i class="fas fa-users"></i></div><div class="service-name">Family Portraits</div><p class="service-desc">Timeless family sessions that celebrate togetherness and connection.</p><div class="service-price">Starting from ₹5,000</div></div>
+      <div class="service-card"><div class="service-icon"><i class="fas fa-om"></i></div><div class="service-name">Traditional Ceremonies</div><p class="service-desc">Cultural event coverage with sensitivity and deep respect for tradition.</p><div class="service-price">Starting from ₹10,000</div></div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section>
+    <div class="section-header fade-in">
+      <span class="section-tag">Client Stories</span>
+      <h2 class="section-title" style="color:var(--gold)">What Our Clients <em>Said</em></h2>
+      <div class="gold-line"><i class="fas fa-diamond"></i></div>
+    </div>
+    <div class="testimonials-grid fade-in">
+      <div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-quote">"Narayan Digital Studio captured our wedding day beyond our dreams. Every photo tells a story. The team was professional, creative, and made us feel completely at ease."</p><div class="testi-author"><div class="testi-avatar">P</div><div><div class="testi-name">Priya & Arjun Sharma</div><div class="testi-event">Wedding Photography</div></div></div></div>
+      <div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-quote">"The baby shoot was magical. They were so patient and gentle with our newborn. The photos are absolutely stunning — we treasure them forever."</p><div class="testi-author"><div class="testi-avatar">M</div><div><div class="testi-name">Meenakshi Reddy</div><div class="testi-event">Newborn Baby Shoot</div></div></div></div>
+      <div class="testi-card"><div class="testi-stars">★★★★★</div><p class="testi-quote">"Our pre-wedding photos look like a movie! The locations they chose and their eye for lighting is just extraordinary. Highly recommended to every couple."</p><div class="testi-author"><div class="testi-avatar">R</div><div><div class="testi-name">Rahul & Kavitha</div><div class="testi-event">Pre-Wedding Shoot</div></div></div></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact-section">
+    <div class="section-header fade-in">
+      <span class="section-tag">Get In Touch</span>
+      <h2 class="section-title">Book Your <em>Session</em></h2>
+      <div class="gold-line"><i class="fas fa-diamond"></i></div>
+    </div>
+    <div class="contact-grid fade-in">
+      <div>
+        <div class="contact-info">
+          <div class="contact-item"><div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div><div><div class="ci-label">Studio Address</div><div class="ci-value">MG Road, opp. to shivananda theater Channapatna,<br>South Bengaluru, Karnataka – 562160</div></div></div>
+          <div class="contact-item"><div class="ci-icon"><i class="fas fa-phone"></i></div><div><div class="ci-label">Phone Number</div><div class="ci-value">+91 9845218896<br>+91 9008518896</div></div></div>
+          <div class="contact-item"><div class="ci-icon"><i class="fas fa-envelope"></i></div><div><div class="ci-label">Email</div><div class="ci-value">nanarayanstudio@gmail.com</div></div></div>
+          <div class="contact-item"><div class="ci-icon"><i class="fas fa-clock"></i></div><div><div class="ci-label">Studio Hours</div><div class="ci-value">Mon – Sat: 9:00 AM – 10:00 PM<br>Sunday: By appointment only</div></div></div>
+        </div>
+        <div class="map-container">
+          <div class="map-placeholder">
+            <i class="fas fa-map-marked-alt"></i>
+            <p>MG Road, opp. to shivananda theater Channapatna, South Bengaluru</p>
+            <p style="font-size:11px;color:var(--gold);margin-top:4px"><a href="https://maps.app.goo.gl/sk3ULCvbhYnSVvKt8">Open in Google Maps →</a></p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <form class="contact-form" onsubmit="handleContact(event)">
+          <div class="form-row">
+            <div class="form-group"><label>Full Name</label><input type="text" placeholder="Your full name" required></div>
+            <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="+91 XXXXX XXXXX"></div>
+          </div>
+          <div class="form-group"><label>Email Address</label><input type="email" placeholder="your@email.com" required></div>
+          <div class="form-group"><label>Service Required</label>
+            <select><option value="" disabled selected>Choose a service</option><option>Wedding Photography</option><option>Pre-Wedding Shoot</option><option>Birthday Events</option><option>Baby Shoot</option><option>Family Portraits</option><option>Traditional Ceremonies</option></select>
+          </div>
+          <div class="form-group"><label>Preferred Date</label><input type="date"></div>
+          <div class="form-group"><label>Message</label><textarea placeholder="Tell us about your vision, event details, and any special requirements..."></textarea></div>
+          <button type="submit" class="btn-gold"><i class="fas fa-paper-plane"></i> Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo" style="margin-bottom:14px" onclick="showPage('page-home')">
+          <div class="logo-emblem">NDS</div>
+          <div class="logo-text"><span class="brand">Narayan Digital Studio</span><span class="tagline">Capturing Memories, Creating Stories</span></div>
+        </div>
+        <p class="tagline-text">Established in 1965, Narayan Digital Studio specializes in turning life's precious moments into lasting memories for families, couples, and businesses across Channapatna.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/nds__photography_?igsh=dG9uNWJ2MHp5YnRl" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://youtube.com/@ndscandidphotography7960?feature=shared" class="social-link" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Quick Links</h4><ul>
+        <li><a href="#" onclick="showPage('page-home')">Home</a></li>
+        <li><a href="#" onclick="scrollToSection('about-section')">About Us</a></li>
+        <li><a href="#" onclick="showPage('page-gallery')">Collections</a></li>
+        <li><a href="#" onclick="scrollToSection('services-section')">Services</a></li>
+        <li><a href="#" onclick="showPage('page-payment')">Payment</a></li>
+        <li><a href="#" onclick="scrollToSection('contact-section')">Contact</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Services</h4><ul>
+        <li><a href="#">Wedding Photography</a></li><li><a href="#">Pre-Wedding Shoots</a></li>
+        <li><a href="#">Birthday Events</a></li><li><a href="#">Baby Shoots</a></li>
+        <li><a href="#">Family Portraits</a></li><li><a href="#">Corporate Events</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul>
+        <li><a href="#">📍 MG Road Channapatna</a></li>
+        <li><a href="#">📞 +91 9845218896</a></li>
+        <li><a href="#">✉️ nanarayanstudio@gmail.com</a></li>
+        <li><a href="#">🕐 Mon–Sun: 9AM–10PM</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 <span>Narayan Digital Studio</span>. All Rights Reserved.</p>
+      <p>Designed @ 531 in South Banglore</p>
+    </div>
+  </footer>
+</div><!-- end page-home -->
+
+<!-- ═══════════════════════════════════════════════
+     PAGE 2 — LOGIN
+═══════════════════════════════════════════════ -->
+<div id="page-login" class="page">
+  <div id="login-page">
+    <div class="login-container">
+      <div class="login-card">
+        <div class="login-logo">
+          <div class="emblem">NDS</div>
+          <h2>Welcome Back</h2>
+          <p>Narayan Digital Studio</p>
+        </div>
+        <div class="login-tabs">
+          <button class="tab-btn active" onclick="switchTab('login-tab', this)">Sign In</button>
+          <button class="tab-btn" onclick="switchTab('register-tab', this)">Register</button>
+        </div>
+        <!-- Sign In -->
+        <div class="tab-content active" id="login-tab">
+          <form class="login-form" onsubmit="handleLogin(event)">
+            <div class="form-group"><label>Email or Mobile Number</label>
+              <div class="input-icon"><i class="fas fa-user"></i><input type="text" placeholder="Enter email or mobile" required></div>
+            </div>
+            <div class="form-group"><label>Password</label>
+              <div class="input-icon"><i class="fas fa-lock"></i><input type="password" placeholder="Enter your password" required></div>
+            </div>
+            <div class="forgot-link" onclick="showModal('forgot-modal')">Forgot Password?</div>
+            <button type="submit" class="btn-gold"><i class="fas fa-sign-in-alt"></i> Sign In</button>
+            <div class="divider">or continue as</div>
+            <button type="button" onclick="showPage('page-admin')" class="btn-outline" style="justify-content:center;padding:12px"><i class="fas fa-shield-alt"></i>&nbsp; Admin Login</button>
+          </form>
+        </div>
+        <!-- Register -->
+        <div class="tab-content" id="register-tab">
+          <form class="login-form" onsubmit="handleRegister(event)">
+            <div class="form-group"><label>Full Name</label><div class="input-icon"><i class="fas fa-user"></i><input type="text" placeholder="Your full name" required></div></div>
+            <div class="form-group"><label>Email Address</label><div class="input-icon"><i class="fas fa-envelope"></i><input type="email" placeholder="your@email.com" required></div></div>
+            <div class="form-group"><label>Mobile Number</label><div class="input-icon"><i class="fas fa-phone"></i><input type="tel" placeholder="+91 XXXXX XXXXX" required></div></div>
+            <div class="form-group"><label>Password</label><div class="input-icon"><i class="fas fa-lock"></i><input type="password" placeholder="Create a strong password" required></div></div>
+            <div class="form-group"><label>Confirm Password</label><div class="input-icon"><i class="fas fa-lock"></i><input type="password" placeholder="Repeat your password" required></div></div>
+            <button type="submit" class="btn-gold"><i class="fas fa-user-plus"></i> Create Account</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- end page-login -->
+
+<!-- ═══════════════════════════════════════════════
+     PAGE 3 — GALLERY / COLLECTIONS
+═══════════════════════════════════════════════ -->
+<div id="page-gallery" class="page">
+  <div id="gallery-page">
+    <div class="gallery-header">
+      <span class="section-tag">Our Portfolio</span>
+      <h1 class="section-title">Photography <em>Collections</em></h1>
+      <div class="gold-line"><i class="fas fa-diamond"></i></div>
+      <p class="section-desc" style="margin:0 auto">Browse our curated collections across every life milestone and celebration.</p>
+    </div>
+    <div style="padding:0 6%">
+      <div class="search-bar">
+        <input type="text" placeholder="Search collections..." id="gallery-search" oninput="filterGallery()">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+    <div class="gallery-filters">
+      <button class="filter-btn active" onclick="setFilter('all', this)">All Work</button>
+      <button class="filter-btn" onclick="setFilter('wedding', this)">Wedding Photography</button>
+      <button class="filter-btn" onclick="setFilter('prewedding', this)">Pre-Wedding Shoots</button>
+      <button class="filter-btn" onclick="setFilter('birthday', this)">Birthday Events</button>
+      <button class="filter-btn" onclick="setFilter('baby', this)">Baby Shoots</button>
+      <button class="filter-btn" onclick="setFilter('family', this)">Family Portraits</button>
+      <button class="filter-btn" onclick="setFilter('ceremony', this)">Maternity</button>
+    </div>
+    <div class="gallery-masonry" id="gallery-masonry"></div>
+  </div>
+</div><!-- end page-gallery -->
+
+<!-- ═══════════════════════════════════════════════
+     PAGE 4 — PAYMENT
+═══════════════════════════════════════════════ -->
+<div id="page-payment" class="page">
+  <div id="payment-page">
+    <div class="payment-header">
+      <span class="section-tag">Secure Checkout</span>
+      <h1 class="section-title">Complete Your <em>Booking</em></h1>
+      <div class="gold-line"><i class="fas fa-diamond"></i></div>
+    </div>
+    <div class="payment-content">
+      <div id="payment-form-view">
+        <div class="payment-grid">
+          <div class="order-summary">
+            <h3>Order Summary</h3>
+            <div class="package-select">
+              <div class="package-option selected" onclick="selectPackage(this,25000,'Wedding Photography – Full Day')"><div class="pkg-name">Wedding Photography – Full Day</div><div class="pkg-desc">12 hrs coverage, 2 photographers, online gallery</div><div class="pkg-price">₹25,000</div></div>
+              <div class="package-option" onclick="selectPackage(this,12000,'Pre-Wedding Shoot')"><div class="pkg-name">Pre-Wedding Shoot</div><div class="pkg-desc">4 hrs, 2 locations, 80+ edited photos</div><div class="pkg-price">₹12,000</div></div>
+              <div class="package-option" onclick="selectPackage(this,8000,'Birthday Event')"><div class="pkg-name">Birthday Event</div><div class="pkg-desc">3 hrs coverage, candid + posed shots</div><div class="pkg-price">₹8,000</div></div>
+              <div class="package-option" onclick="selectPackage(this,6000,'Baby Shoot')"><div class="pkg-name">Baby Shoot</div><div class="pkg-desc">Studio session, 2 hrs, props included</div><div class="pkg-price">₹6,000</div></div>
+            </div>
+            <div class="order-line"><span>Package</span><span id="pkg-name-display">Wedding Photography</span></div>
+            <div class="order-line"><span>GST (18%)</span><span id="gst-display">₹4,500</span></div>
+            <div class="order-total"><span>Total</span><span id="total-display">₹29,500</span></div>
+          </div>
+          <div class="payment-form-card">
+            <h3>Customer & Payment Details</h3>
+            <div class="payment-form">
+              <div class="form-row">
+                <div class="form-group"><label>Full Name</label><input type="text" placeholder="As per ID" required></div>
+                <div class="form-group"><label>Mobile Number</label><input type="tel" placeholder="+91 XXXXX XXXXX"></div>
+              </div>
+              <div class="form-group"><label>Email Address</label><input type="email" placeholder="Confirmation will be sent here"></div>
+              <div class="form-group"><label>Event Date</label><input type="date"></div>
+            </div>
+            <div style="margin-top:24px;margin-bottom:12px">
+              <div style="font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:12px">Payment Method</div>
+              <div class="payment-methods">
+                <div class="pay-method selected" onclick="selectPayMethod(this)"><i class="fas fa-mobile-alt"></i><span>UPI</span></div>
+                <div class="pay-method" onclick="selectPayMethod(this)"><i class="fas fa-credit-card"></i><span>Card</span></div>
+                <div class="pay-method" onclick="selectPayMethod(this)"><i class="fas fa-university"></i><span>Net Banking</span></div>
+                <div class="pay-method" onclick="selectPayMethod(this)"><i class="fas fa-qrcode"></i><span>QR Code</span></div>
+              </div>
+            </div>
+            <div class="payment-form">
+              <div class="form-group"><label>UPI ID</label><input type="text" placeholder="yourname@upi"></div>
+              <button class="btn-gold" onclick="processPayment()"><i class="fas fa-lock"></i> Pay <span id="pay-btn-amount">₹29,500</span> Securely</button>
+              <div class="secure-badge"><i class="fas fa-shield-alt"></i> 256-bit SSL Encrypted · Razorpay Powered</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="payment-success" id="payment-success">
+        <div class="success-icon"><i class="fas fa-check"></i></div>
+        <h2>Payment Successful!</h2>
+        <p>Your booking is confirmed. A confirmation receipt has been sent to your email.<br>Our team will contact you within 24 hours to discuss your session details.</p>
+        <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+          <a href="#" class="receipt-btn" onclick="downloadReceipt()"><i class="fas fa-download"></i> Download Receipt</a>
+          <a href="#" onclick="showPage('page-dashboard')" class="btn-gold"><i class="fas fa-tachometer-alt"></i> View Dashboard</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- end page-payment -->
+
+<!-- ═══════════════════════════════════════════════
+     PAGE 5 — DASHBOARD
+═══════════════════════════════════════════════ -->
+<div id="page-dashboard" class="page">
+  <div id="dashboard-page">
+    <div class="dashboard-content">
+      <div class="welcome-bar">
+        <div>
+          <h2>Welcome back, <em>Priya Sharma</em></h2>
+          <div class="user-meta">priya.sharma@email.com · Member since Jan 2024</div>
+        </div>
+        <button class="logout-btn" onclick="showPage('page-home')"><i class="fas fa-sign-out-alt"></i> Logout</button>
+      </div>
+      <div class="stats-bar">
+        <div class="stat-card"><div class="icon"><i class="fas fa-calendar-check"></i></div><div class="value">3</div><div class="label">Active Bookings</div></div>
+        <div class="stat-card"><div class="icon"><i class="fas fa-images"></i></div><div class="value">2</div><div class="label">Albums Ready</div></div>
+        <div class="stat-card"><div class="icon"><i class="fas fa-rupee-sign"></i></div><div class="value">₹49,500</div><div class="label">Total Spent</div></div>
+        <div class="stat-card"><div class="icon"><i class="fas fa-download"></i></div><div class="value">147</div><div class="label">Photos Downloaded</div></div>
+      </div>
+      <div class="dashboard-grid">
+        <div>
+          <div class="dash-card" style="margin-bottom:24px">
+            <h3><i class="fas fa-calendar-alt" style="margin-right:8px"></i>Booked Services</h3>
+            <div class="booking-item"><div class="booking-icon"><i class="fas fa-heart"></i></div><div class="booking-info"><div class="booking-name">Wedding Photography – Full Day</div><div class="booking-date">15 Feb 2025 · Grand Palace Banquet, Bengaluru</div></div><div class="booking-status status-confirmed">Confirmed</div></div>
+            <div class="booking-item"><div class="booking-icon"><i class="fas fa-ring"></i></div><div class="booking-info"><div class="booking-name">Pre-Wedding Shoot</div><div class="booking-date">28 Jan 2025 · Lalbagh Botanical Garden</div></div><div class="booking-status status-completed">Completed</div></div>
+            <div class="booking-item"><div class="booking-icon"><i class="fas fa-birthday-cake"></i></div><div class="booking-info"><div class="booking-name">Birthday Event – 1st Birthday</div><div class="booking-date">10 Mar 2025 · Home Studio</div></div><div class="booking-status status-pending">Pending</div></div>
+          </div>
+          <div class="dash-card">
+            <h3><i class="fas fa-receipt" style="margin-right:8px"></i>Payment History</h3>
+            <div class="pay-history">
+              <div class="pay-row"><span>Wedding Package</span><span class="date">12 Dec 2024</span><span class="amount">₹29,500</span></div>
+              <div class="pay-row"><span>Pre-Wedding Shoot</span><span class="date">01 Dec 2024</span><span class="amount">₹14,160</span></div>
+              <div class="pay-row"><span>Baby Shoot Deposit</span><span class="date">20 Nov 2024</span><span class="amount">₹3,000</span></div>
+              <div class="pay-row"><span>Album Printing</span><span class="date">05 Nov 2024</span><span class="amount">₹2,840</span></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="dash-card" style="margin-bottom:24px">
+            <h3><i class="fas fa-images" style="margin-right:8px"></i>My Albums</h3>
+            <div class="album-grid-small">
+              <div class="album-thumb"><img src="d01.png" alt="album"></div>
+              <div class="album-thumb"><img src="d02.jpg" alt="album"></div>
+              <div class="album-thumb"><img src="d03.jpg" alt="album"><div class="album-lock"><i class="fas fa-lock"></i></div></div>
+              <div class="album-thumb"><img src="d05.jpg" alt="album"></div>
+              <div class="album-thumb"><img src="d06.jpg" alt="album"><div class="album-lock"><i class="fas fa-lock"></i></div></div>
+              <div class="album-thumb" style="background:var(--dark-4);display:flex;align-items:center;justify-content:center;cursor:pointer" onclick="showPage('page-payment')"><i class="fas fa-plus" style="color:var(--gold);font-size:20px"></i></div>
+            </div>
+          </div>
+          <div class="dash-card">
+            <h3><i class="fas fa-download" style="margin-right:8px"></i>Digital Downloads</h3>
+            <div style="display:flex;flex-direction:column;gap:12px">
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.04)"><span style="font-size:13px">Pre-Wedding Album (80 photos)</span><button class="receipt-btn" style="padding:6px 14px;font-size:10px" onclick="showNotification('Downloading...')"><i class="fas fa-download"></i></button></div>
+              <div style="display:flex;justify-content:space-between;align-items:center;padding:10px 0"><span style="font-size:13px">Birthday Highlights (45 photos)</span><button class="receipt-btn" style="padding:6px 14px;font-size:10px" onclick="showNotification('Downloading...')"><i class="fas fa-download"></i></button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- end page-dashboard -->
+
+<!-- ═══════════════════════════════════════════════
+     PAGE 6 — ADMIN
+═══════════════════════════════════════════════ -->
+<div id="page-admin" class="page">
+  <div id="admin-page">
+    <div class="admin-layout">
+      <div class="admin-sidebar">
+        <div class="admin-nav-item active" onclick="setAdminSection('dashboard',this)"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></div>
+        <div class="admin-nav-item" onclick="setAdminSection('albums',this)"><i class="fas fa-images"></i><span>Albums</span></div>
+        <div class="admin-nav-item" onclick="setAdminSection('users',this)"><i class="fas fa-users"></i><span>Users</span></div>
+        <div class="admin-nav-item" onclick="setAdminSection('payments',this)"><i class="fas fa-rupee-sign"></i><span>Payments</span></div>
+        <div class="admin-nav-item" onclick="setAdminSection('settings',this)"><i class="fas fa-cog"></i><span>Settings</span></div>
+        <div class="admin-nav-item" onclick="showPage('page-home')"><i class="fas fa-sign-out-alt"></i><span>Exit Admin</span></div>
+      </div>
+      <div class="admin-main">
+        <div class="admin-topbar">
+          <div>
+            <h2>Admin <em style="font-family:var(--font-serif);font-style:italic;color:var(--gold)">Dashboard</em></h2>
+            <div style="font-size:11px;color:var(--gray);margin-top:4px">Narayan Digital Studio · Administrator</div>
+          </div>
+          <button class="add-btn" onclick="showModal('upload-modal')"><i class="fas fa-plus"></i> Upload Collection</button>
+        </div>
+        <div class="admin-stats">
+          <div class="admin-stat"><div class="as-val">4,832</div><div class="as-lbl">Total Photos</div><div class="as-trend">↑ 12% this month</div></div>
+          <div class="admin-stat"><div class="as-val">284</div><div class="as-lbl">Total Clients</div><div class="as-trend">↑ 8 new this week</div></div>
+          <div class="admin-stat"><div class="as-val">₹8.4L</div><div class="as-lbl">Revenue (2024)</div><div class="as-trend">↑ 22% YoY</div></div>
+          <div class="admin-stat"><div class="as-val">47</div><div class="as-lbl">Active Bookings</div><div class="as-trend">12 upcoming events</div></div>
+        </div>
+        <div class="admin-table-card">
+          <div class="atc-header"><h3><i class="fas fa-users" style="margin-right:8px"></i>Recent Users</h3><button class="add-btn"><i class="fas fa-plus"></i> Add User</button></div>
+          <table class="admin-table">
+            <thead><tr><th>Name</th><th>Email</th><th>Phone</th><th>Bookings</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>Priya Sharma</td><td>priya@email.com</td><td>+91 98765 43210</td><td>3</td><td><span class="booking-status status-confirmed">Active</span></td></tr>
+              <tr><td>Rahul Reddy</td><td>rahul@email.com</td><td>+91 87654 32109</td><td>1</td><td><span class="booking-status status-confirmed">Active</span></td></tr>
+              <tr><td>Meenakshi K</td><td>meena@email.com</td><td>+91 76543 21098</td><td>2</td><td><span class="booking-status status-pending">Pending</span></td></tr>
+              <tr><td>Arjun Naidu</td><td>arjun@email.com</td><td>+91 65432 10987</td><td>1</td><td><span class="booking-status status-completed">Completed</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="admin-table-card">
+          <div class="atc-header"><h3><i class="fas fa-credit-card" style="margin-right:8px"></i>Payment Records</h3></div>
+          <table class="admin-table">
+            <thead><tr><th>Client</th><th>Service</th><th>Date</th><th>Amount</th><th>Status</th></tr></thead>
+            <tbody>
+              <tr><td>Priya Sharma</td><td>Wedding Photography</td><td>12 Dec 2024</td><td style="color:var(--gold)">₹29,500</td><td><span class="booking-status status-confirmed">Paid</span></td></tr>
+              <tr><td>Rahul Reddy</td><td>Pre-Wedding Shoot</td><td>01 Dec 2024</td><td style="color:var(--gold)">₹14,160</td><td><span class="booking-status status-confirmed">Paid</span></td></tr>
+              <tr><td>Meenakshi K</td><td>Baby Shoot</td><td>20 Nov 2024</td><td style="color:var(--gold)">₹3,000</td><td><span class="booking-status status-pending">Advance</span></td></tr>
+              <tr><td>Arjun Naidu</td><td>Family Portrait</td><td>10 Nov 2024</td><td style="color:var(--gold)">₹5,900</td><td><span class="booking-status status-confirmed">Paid</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- end page-admin -->
+
+<!-- ═══════════════════════════════════════════════
+     MODALS
+═══════════════════════════════════════════════ -->
+<div class="modal-overlay" id="forgot-modal">
+  <div class="modal">
+    <div class="modal-header"><h3>Reset Password</h3><button class="modal-close" onclick="closeModal('forgot-modal')"><i class="fas fa-times"></i></button></div>
+    <p style="color:var(--gray);font-size:13px;margin-bottom:20px">Enter your registered email and we'll send you a reset link.</p>
+    <div class="login-form">
+      <div class="form-group"><label>Email Address</label><input type="email" placeholder="your@email.com"></div>
+      <button class="btn-gold" style="justify-content:center;width:100%" onclick="showNotification('Reset link sent!');closeModal('forgot-modal')"><i class="fas fa-paper-plane"></i> Send Reset Link</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="upload-modal">
+  <div class="modal">
+    <div class="modal-header"><h3>Upload Collection</h3><button class="modal-close" onclick="closeModal('upload-modal')"><i class="fas fa-times"></i></button></div>
+    <div class="login-form">
+      <div class="form-group"><label>Album Name</label><input type="text" placeholder="e.g. Sharma Wedding 2024"></div>
+      <div class="form-group"><label>Category</label><select><option>Wedding Photography</option><option>Pre-Wedding</option><option>Birthday</option><option>Baby Shoot</option><option>Family Portrait</option></select></div>
+      <div class="upload-zone" onclick="showNotification('File picker would open here')">
+        <i class="fas fa-cloud-upload-alt"></i>
+        <p>Click to upload photos or drag & drop</p>
+        <p style="font-size:11px;margin-top:6px;color:var(--gold)">JPG, PNG up to 50MB each</p>
+      </div>
+      <button class="btn-gold" style="justify-content:center;width:100%" onclick="showNotification('Album uploaded!');closeModal('upload-modal')"><i class="fas fa-upload"></i> Upload Album</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     SHARED UI
+═══════════════════════════════════════════════ -->
+<div class="notification" id="notification"><i class="fas fa-check-circle"></i><p id="notification-msg">Action completed!</p></div>
+<a href="https://wa.me/919845218896" class="whatsapp-btn" target="_blank" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+<!-- ═══════════════════════════════════════════════
+     SCRIPTS — nds.js handles all logic
+═══════════════════════════════════════════════ -->
+<script src="nds.js"></script>
+</body>
+</html>
